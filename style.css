@@ -1,0 +1,97 @@
+/* Reset css */
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&family=Montserrat&family=Nunito+Sans:ital,opsz,wght@1,6..12,200&family=Poppins:ital,wght@0,200;0,300;1,200&family=Roboto+Mono&family=Rubik:wght@300&family=Vina+Sans&family=Work+Sans:wght@400;600;700&display=swap');
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "work sans";
+}
+/* End of Reset css */
+
+/* initial setting */
+h1 {
+    color: hsl(292, 42%, 14%);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+h2 {
+    color: hsl(292, 42%, 14%);
+    font-size: 16px;
+    font-weight: 600;
+    width: 220px;
+}
+
+p {
+    font-weight: 400;
+    color: hsl(292, 16%, 49%);
+}
+
+/* body */
+body {
+    background-image: url(./faq-accordion-main/assets/images/background-pattern-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-color: hsl(275, 100%, 97%);
+}
+
+/* main */
+main {
+    background-color: hsl(0, 0%, 100%);
+    margin: 9rem 7% 8rem 7%;
+    /* width: 80%; */
+    height: 70%;
+    /* overflow: hidden; */
+    border-radius: 10px;
+    padding: 2rem .5rem;
+}
+
+.title {
+    display: flex;
+    margin-left: 1.25rem;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+
+.title  img {
+    height: 20px;
+}
+
+.question {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 1rem 0 1rem;
+}
+
+.answer {
+    margin: 1rem 1rem 0 1rem;
+    /* display: none; */
+}
+
+/* footer */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+/* End of mobile design */
+
+@media (min-width:600px) {
+    body {
+        background-image: url(./faq-accordion-main/assets/images/background-pattern-desktop.svg);
+    }
+
+    main {
+        max-width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15%;
+        
+    }
+    h2 {
+        width: fit-content;
+        margin-right: 1.5rem;
+    }
+}
+
