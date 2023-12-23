@@ -24,9 +24,20 @@ h2 {
     width: 220px;
 }
 
+.question:hover h2,
+.question:hover {
+    color: rgb(190, 37, 190);
+    cursor: pointer;
+}
+
+.question:hover h2 {
+    transform: translateX(5px);
+    transition-duration: .3s;
+}
 p {
     font-weight: 400;
     color: hsl(292, 16%, 49%);
+    
 }
 
 /* body */
@@ -40,10 +51,8 @@ body {
 /* main */
 main {
     background-color: hsl(0, 0%, 100%);
-    margin: 9rem 7% 8rem 7%;
-    /* width: 80%; */
+    margin: 9rem 7% 1rem 7%;
     height: 70%;
-    /* overflow: hidden; */
     border-radius: 10px;
     padding: 2rem .5rem;
 }
@@ -65,14 +74,28 @@ main {
     margin: 1rem 1rem 0 1rem;
 }
 
-.answer {
+.hide-answer {
+    display: none;
+}
+
+.show-answer {
+    display: block;
     margin: 1rem 1rem 0 1rem;
-    /* display: none; */
 }
 
 /* footer */
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+footer {
+    position: sticky;
+    top: 100%;
+}
+
+.attribution {
+    font-size: 11px; text-align: center;
+}
+.attribution a {
+    color: hsl(0, 0%, 0%);
+    text-decoration: none;
+}
 
 
 /* End of mobile design */
